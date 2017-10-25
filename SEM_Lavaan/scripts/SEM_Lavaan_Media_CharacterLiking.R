@@ -32,7 +32,11 @@ cfa_model1 <- '
 
 # evaluate the model
 fit1 <- cfa(cfa_model1, data=mydata) 
-summary(fit1, fit.measures = T, standardized = T)
+summary(fit1, fit.measures = T, standardized = T, rsquare = T)
+standardizedSolution(PAPV_fit, type = "std.all", se = TRUE, 
+                     zstat = TRUE, pvalue = TRUE, remove.eq = TRUE, 
+                     remove.ineq = TRUE, remove.def = FALSE,
+                     GLIST = NULL, est = NULL)
 
 fitMeasures(fit1, c("npar", "chisq", "df", "pvalue", "cfi", "rmsea", "srmr", "pclose", "nfi"))
 
