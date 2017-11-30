@@ -4,7 +4,8 @@
 #########################################################
 #########################################################
 
-
+install.packages("pwr")
+library(pwr)
 
 #### for each power analysis, you enter the score for 3 of the 4 items
 #### and for the item you want you enter "NULL" i.e. "n=NULL"
