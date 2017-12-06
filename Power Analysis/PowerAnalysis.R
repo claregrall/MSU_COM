@@ -11,11 +11,12 @@ library(pwr)
 #### and for the item you want you enter "NULL" i.e. "n=NULL"
 #### for each test there's a comment on Cohen's effect size suggestion
 #### in the format of small/medeum/large effects
+#### The common power to use is power=0.8
 
 ################   T-Test    ############################
 
 #### for a one sample, 2 sample, or paired t-test, use the following
-#### n= smaple size, d=effect size, type indicates if you want a two-sample
+#### n= sample size, d=effect size, type indicates if you want a two-sample
 #### one-sample, or paired t-test
 #### Cohen suggests d=0.2/0.5/0.8
 
